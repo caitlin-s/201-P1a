@@ -4,6 +4,10 @@
 		Full details here https://css-tricks.com/box-sizing/ */
 }
 
+html{
+	scroll-behavior: smooth;
+}
+
 body{
 	margin: 0px; /* Often browsers have a 5px margin by deafult*/
 	font-family: sans-serif;
@@ -18,8 +22,8 @@ section{
 }
 
 header{
-	background-color: darkOrange;
-	color: white; /* more readable on an orange background */
+	background-color: #1c1c1c; /* dark grey backg */
+	color: white; 
 	padding-top: 50px;
 	padding-bottom: 50px;
 }
@@ -27,7 +31,8 @@ header{
 nav{
 	width: 100%;
 	height: 60px;
-	background-color: wheat;
+	position: fixed;
+	background-color: #707070; /* grey backg*/
 }
 
 nav a, nav h3{
@@ -36,16 +41,50 @@ nav a, nav h3{
 	line-height: 60px;
 	margin-left: 1em;
 	margin-right: 1em;
+	font-family: 'avenir-black', sans-serif;
+	color: white;
 	text-decoration: none;
 }
 
-nav a:hover{
-	text-decoration: underline; /* Hover styles to let people know they can click it */
+/*TYPE*/
+
+h1{
+	font-family: 'avenir-black', sans-serif;
+	text-align: center;
+	font-size: 50px;
 }
 
+p{
+	font-family: 'avenir-medium', sans-serif;
+	text-align: center;
+}
 
+i{
+	font-family: 'avenir-medium', sans-serif;
+	text-align: center;
+	font-size: 15px;
+}
 
-/* Simple grid */
+/*FONTS*/
+
+nav a:hover{
+  color: #c4c4c4; /*dark grey hover*/
+}
+
+@font-face{
+  font-family: 'avenir-black';
+  src: url('avenir-black.ttf');
+  font-weight: bold;
+}
+
+@font-face{
+  font-family: 'avenir-medium';
+  src: url('avenir-medium.otf');
+  font-weight: normal;
+}
+
+/*GRIDS*/
+
 .g-row{
 	width: 100%;
 	overflow: hidden;
@@ -67,8 +106,7 @@ nav a:hover{
 
 .g-70{
 	width: 70%;
-	float: left;
-}
+ }
 
 .show{
 	border: 1px solid blue;
@@ -76,5 +114,13 @@ nav a:hover{
 }
 
 .padded{
-	padding: 20px; /* I add this to cells to add a little padding*/
+	padding: 20px; 
+}
+
+.padded-left{
+	padding-left: 30px; 
+}
+
+.padded-right{
+	padding-right: 30px;
 }
