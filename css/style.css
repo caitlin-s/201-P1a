@@ -83,6 +83,10 @@ nav a:hover{
   font-weight: normal;
 }
 
+.text{
+	height:50px;
+}
+
 /*GRIDS*/
 
 .g-row{
@@ -91,26 +95,12 @@ nav a:hover{
 }
 
 .g-row img{
-	width: 100%; /*This makes all images in grids to be the size of their cell */
+	width: 100%; 
 }
 
 .g-50{
 	width: 50%;
 	float: left;
-}
-
-.g-30{
-	width: 30%;
-	float: left;
-}
-
-.g-70{
-	width: 70%;
- }
-
-.show{
-	border: 1px solid blue;
-	padding: 2px;
 }
 
 .padded{
@@ -119,10 +109,10 @@ nav a:hover{
 
 .padded-left{
 	padding-left: 30px; 
-	padding-bottom: 50px;
+	padding-bottom: 30px;
 }
 
 .padded-right{
 	padding-right: 30px;
-	padding-bottom: 50px;
+	padding-bottom: 30px;
 }
