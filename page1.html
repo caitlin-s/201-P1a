@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Manhole Covers</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<style>
+		.mySlides {display:none;}
+	</style>
+
+</head>
+
+<body>
+
+<!-- NAV BAR -->
+	<nav>
+		<a href="index.html">Home</a>
+		<a href="page1.html">Manhole Covers</a>
+		<a href="page2.html">Power Poles</a>
+		<a href="page3.html">Buried Cables</a>
+		<a href="page4.html">Post Boxes</a>
+	</nav>
+
+<!-- MANHOLE COVERS -->
+
+	<header style="background-color: #002766"> <!-- blue background -->
+		<section style="padding-bottom: 20px">
+			<h1>Manhole Covers</h1>
+			<p>Manholes are openings to a space that we don't usually recognise or consider in our day to day lives. Beneath us lies a vast network, making connections between us and countless other systems such as the water, sewerage, telephone, electric, heating and gas services. The designs on these manhole covers often indicate what system they are connected to.</p>
+		</section>
+	</header>
+
+<section>
+	<img class="mySlides" src="img/Manhole_cover/manhole_1.jpg">
+	<img class="mySlides" src="img/Manhole_cover/manhole_2.jpg">
+	<img class="mySlides" src="img/Manhole_cover/manhole_2.jpg">
+
+	<button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+	<button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+</section>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1} 
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none"; 
+  }
+  x[slideIndex-1].style.display = "block"; 
+}
+</script>
+
+</body>
+
+</html>
