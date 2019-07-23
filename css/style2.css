@@ -22,21 +22,23 @@ section{
 }
 
 /*HEADER*/
+header{
+	background-color: #563f46; 
+	color: white; 
+	height: 100vh;
+}
 
 header section{
 	max-width: 1000px;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 20px;
-	margin-bottom: 200px;
-	padding-bottom: 20px;
+	margin-top: 0px;
+	padding-top: 32vh;
 }
 
-header{
-	background-color: #563f46; 
-	color: white; 
-	padding-top: 50px;
-	padding-bottom: 50px;
+header h1{
+	margin-top: 0px;
+	margin-bottom: 1vh;
 }
 
 img{
@@ -94,7 +96,7 @@ h1{
 }
 
 div h1{
-	font-size: 100px;
+	font-size: 5vw;
 	margin: 0px;
 }
 

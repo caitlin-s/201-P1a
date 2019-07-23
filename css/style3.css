@@ -23,20 +23,23 @@ section{
 
 /*HEADER*/
 
+header{
+	background-color: #8ca3a3; 
+	color: white; 
+	height: 100vh;
+}
+
 header section{
 	max-width: 1000px;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 200px;
-	margin-bottom: 280px;
-	padding-bottom: 20px;
+	margin-top: 0px;
+	padding-top: 30vh;
 }
 
-header{
-	background-color: #8ca3a3; 
-	color: white; 
-	padding-top: 50px;
-	padding-bottom: 50px;
+header h1{
+	margin-top: 0px;
+	margin-bottom: 1vh;
 }
 
 img{
@@ -90,11 +93,11 @@ button p{
 h1{
 	font-family: 'avenir-black', sans-serif;
 	text-align: center;
-	font-size: 150px;
+	font-size: 12vh;
 }
 
 div h1{
-	font-size: 100px;
+	font-size: 5vw;
 	margin: 0px;
 }
 
